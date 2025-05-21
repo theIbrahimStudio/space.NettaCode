@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 const useGraph = () => {
   const getStyles = (flex, size, align, color, type, weight, opacity, style, decoration, lineHeight, truncated, clamp, whiteSpace) => {
-    return { flex, position: "relative", margin: "0", textAlign: align, color, fontFamily: type === "primary" ? "var(--font-primary)" : "var(--font-secondary)", fontSize: size, fontWeight: weight, fontStyle: style, textDecoration: decoration, opacity, lineHeight, textOverflow: truncated ? "ellipsis" : "unset", lineClamp: truncated ? clamp : "unset", whiteSpace: truncated && clamp === "1" ? "nowrap" : whiteSpace };
+    return { flex, position: "relative", margin: "0", textAlign: align, color, fontFamily: type === "primary" ? "var(--font-primary)" : "var(--font-secondary)", fontSize: size, fontWeight: weight, fontStyle: style, textDecoration: decoration, opacity, lineHeight, textOverflow: truncated ? "ellipsis" : "unset", lineClamp: truncated ? clamp : "unset", cursor: "default", whiteSpace: truncated && clamp === "1" ? "nowrap" : whiteSpace };
   };
 
   const H1 = ({ id, flex = "unset", size = "1.5625em", align = "left", color = "var(--color-primary)", weight = "700", style = "normal", decoration = "unset", type = "primary", opacity = "1", lineHeight = "120%", truncated = false, clamp, whiteSpace = "unset", children }) => {
