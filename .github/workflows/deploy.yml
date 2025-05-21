@@ -3,11 +3,11 @@ name: NETTA v1.0.0
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   web-deploy:
-    name: Deploy on master
+    name: Deploy on main
     runs-on: ubuntu-latest
 
     steps:
