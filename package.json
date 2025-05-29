@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@theibrahimstudio/capturend": "^1.0.9",
+    "@theibrahimstudio/capturend": "^1.0.10",
     "cross-env": "^7.0.3",
     "rimraf": "^5.0.10",
     "shelljs": "^0.8.5"
