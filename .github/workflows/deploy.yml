@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nettacode_static_${{ github.sha }}
-          path: static/
+          path: build-ssg/
 
       - name: 8. Sync files to live server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -50,4 +50,4 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: static/
+          local-dir: build-ssg/
