@@ -30,7 +30,7 @@ jobs:
           GH_PACKAGE_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
 
       - name: 5. Builds the app for production
-        run: CI=true npm run static
+        run: npm run static
 
       - name: 6. Generate SPA artifact
         uses: actions/upload-artifact@v4
